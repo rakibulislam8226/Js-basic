@@ -18,3 +18,13 @@ let lname = 'khan';
 // let result = `${fname} ${lname} your age ${age}.`
 // console.log(result)
 
+
+// arrow function and setTimeout with this keyword //
+let nepal = {
+    mountains: ['Dilli', 'Ctg', 'Demo'],
+    printWithDash: function () {
+        setTimeout(()=> console.log(this.mountains.join(' - ')),3000);
+    }
+};
+
+nepal.printWithDash();
