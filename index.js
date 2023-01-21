@@ -1,9 +1,9 @@
 import welcome from "./functions/welcome.js";
 import createBlog from './arrow_functions/blog.js'
 
-
+// inherite form another // 
 // welcome();
-createBlog('blog title', 'blog body');
+// createBlog('blog title', 'blog body');
 
 var Demo = 'Sakib';
 Demo = 'Rakib';
@@ -20,11 +20,35 @@ let lname = 'khan';
 
 
 // arrow function and setTimeout with this keyword //
-let nepal = {
-    mountains: ['Dilli', 'Ctg', 'Demo'],
-    printWithDash: function () {
-        setTimeout(()=> console.log(this.mountains.join(' - ')),3000);
-    }
-};
+// let nepal = {
+//     mountains: ['Dilli', 'Ctg', 'Demo'],
+//     printWithDash: function () {
+//         setTimeout(()=> console.log(this.mountains.join(' - ')),3000);
+//     }
+// };
 
-nepal.printWithDash();
+// nepal.printWithDash();
+
+
+// Object destructuring in ES6 //
+let thingsTodo = {
+    morning: 'Breakfast',
+    afternoon: 'Coding',
+    night: ['sleep', 'Dream']
+};
+let { morning, afternoon } = thingsTodo;
+// console.log(morning +' - '+ afternoon);
+
+
+let studentUni = (student) => {
+    let { name, university } = student;
+    // console.log(`${name} from ${university}`);
+}
+studentUni({
+    name: 'rakib',
+    university: 'GUB'
+});
+
+// array destructuring in ES6 //
+let [ , findOne]=['first', 'second', 'thired']; //findOne one indicate the array number and have to index it with (,)
+console.log(findOne);
