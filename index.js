@@ -1,9 +1,15 @@
 import welcome from "./functions/welcome.js";
 import createBlog from './arrow_functions/blog.js'
+import Car from "./class/car.js";
 
 // // inherite form another // 
 // welcome();
 // createBlog('blog title', 'blog body');
+let myCar1 = new Car('rakib', 22);
+console.log(myCar1.info());
+
+// const myCar = new Model("Ford", 15, ['R15', 'suzuki']);
+// myCar.info();
 
 var Demo = 'Sakib';
 Demo = 'Rakib';
@@ -72,7 +78,6 @@ let lname = 'khan';
 // let [first, ...rest] = dhaka;
 // console.log(first);
 // console.log(...rest);
-
 
 
 
